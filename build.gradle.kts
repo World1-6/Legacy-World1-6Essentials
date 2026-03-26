@@ -4,18 +4,18 @@ import java.util.*
 plugins {
     `java-library`
     `maven-publish`
-    id("io.freefair.lombok") version "8.11" // https://plugins.gradle.org/plugin/io.freefair.lombok
-    id("com.gradleup.shadow") version "8.3.5" // https://github.com/GradleUp/shadow
-    id("net.kyori.blossom") version "2.1.0" // https://github.com/KyoriPowered/blossom
-    id("xyz.wagyourtail.jvmdowngrader") version "1.2.1" // https://github.com/unimined/JvmDowngrader https://plugins.gradle.org/plugin/xyz.wagyourtail.jvmdowngrader
+    id("io.freefair.lombok") version "9.2.0" // https://plugins.gradle.org/plugin/io.freefair.lombok
+    id("com.gradleup.shadow") version "9.4.0" // https://github.com/GradleUp/shadow
+    id("net.kyori.blossom") version "2.2.0" // https://github.com/KyoriPowered/blossom
+    id("xyz.wagyourtail.jvmdowngrader") version "1.3.6" // https://github.com/unimined/JvmDowngrader https://plugins.gradle.org/plugin/xyz.wagyourtail.jvmdowngrader
 }
 
 group = "com.andrew121410.mc"
 version = "1.0"
 description = "World1-6Essentials"
 
-java.sourceCompatibility = JavaVersion.VERSION_21
-java.targetCompatibility = JavaVersion.VERSION_21
+java.sourceCompatibility = JavaVersion.VERSION_25
+java.targetCompatibility = JavaVersion.VERSION_25
 
 repositories {
     mavenLocal()
@@ -36,9 +36,9 @@ repositories {
 
 dependencies {
     implementation("org.bstats:bstats-bukkit:3.0.2")
-    implementation("com.github.andrew121410:CCUtilsJava:20b05043ca")
-    implementation("net.kyori:adventure-text-minimessage:4.17.0")
-    implementation("net.kyori:adventure-text-serializer-legacy:4.17.0")
+    implementation("com.github.andrew121410.CCUtilsJava:ccutilsjava-relocation:2a3b65a477")
+    implementation("net.kyori:adventure-text-minimessage:4.26.1")
+    implementation("net.kyori:adventure-text-serializer-legacy:4.25.1")
 
     // Paper goes first then CraftBukkit
     compileOnly("com.destroystokyo.paper:paper-api:1.12.2-R0.1-SNAPSHOT")
