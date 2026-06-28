@@ -37,7 +37,7 @@ repositories {
 dependencies {
     implementation("org.bstats:bstats-bukkit:3.0.2")
     implementation("com.github.andrew121410.CCUtilsJava:ccutilsjava-relocation:2a3b65a477")
-    implementation("net.kyori:adventure-text-minimessage:4.26.1")
+    implementation("net.kyori:adventure-text-minimessage:5.2.0")
     implementation("net.kyori:adventure-text-serializer-legacy:4.25.1")
 
     // Paper goes first then CraftBukkit
