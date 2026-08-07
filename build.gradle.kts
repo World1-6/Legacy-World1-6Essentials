@@ -7,7 +7,7 @@ plugins {
     id("io.freefair.lombok") version "9.2.0" // https://plugins.gradle.org/plugin/io.freefair.lombok
     id("com.gradleup.shadow") version "9.4.0" // https://github.com/GradleUp/shadow
     id("net.kyori.blossom") version "2.2.0" // https://github.com/KyoriPowered/blossom
-    id("xyz.wagyourtail.jvmdowngrader") version "1.3.6" // https://github.com/unimined/JvmDowngrader https://plugins.gradle.org/plugin/xyz.wagyourtail.jvmdowngrader
+    id("xyz.wagyourtail.jvmdowngrader") version "2.0.1" // https://github.com/unimined/JvmDowngrader https://plugins.gradle.org/plugin/xyz.wagyourtail.jvmdowngrader
 }
 
 group = "com.andrew121410.mc"
